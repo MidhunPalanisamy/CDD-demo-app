@@ -9,14 +9,14 @@ A minimal project that serves a static HTML page from Nginx inside Docker, built
 
 ## Build The Docker Image Manually
 ```bash
-docker build -t midhun744/cdd:latest .
+docker build -t {Docker-Repo}:latest .
 ```
 
 ## Run The Container Manually (From Docker Hub)
 ```bash
-docker pull midhun744/cdd:latest
+docker pull {Docker-Repo}:latest
 docker rm -f cicd-demo-nginx-container || true
-docker run -d --name cicd-demo-nginx-container -p 8080:80 midhun744/cdd:latest
+docker run -d --name cicd-demo-nginx-container -p 8080:80 {Docker-Repo}:latest
 ```
 
 Visit: `http://localhost:8080`
