@@ -15,7 +15,6 @@ TEST_CONTAINER = "cicd-demo-app-test"
 
 stages {
 
-```
 stage('Checkout') {
   steps {
     checkout scm
@@ -64,7 +63,6 @@ stage('Deploy Container') {
     sh '$DOCKER run -d --name $CONTAINER_NAME -p 8080:80 $DOCKERHUB_REPO:latest'
   }
 }
-```
 
 }
 
